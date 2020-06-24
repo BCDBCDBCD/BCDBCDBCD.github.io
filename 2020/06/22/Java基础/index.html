@@ -16,7 +16,7 @@
 <meta property="og:description" content="爱情来的快去的也快，只有Java才是永恒的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-22T02:23:17.000Z">
-<meta property="article:modified_time" content="2020-06-24T03:39:08.916Z">
+<meta property="article:modified_time" content="2020-06-24T11:27:05.174Z">
 <meta property="article:author" content="Jinhu Bi">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -200,7 +200,9 @@
 <li>删除java的安装目录 </li>
 <li>在环境变量里删除JAVA_HOME </li>
 <li>在环境变量中path里删除关于java的目录 </li>
-<li>控制台中输入java-version检验系统有没有卸载完成 <h2 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h2></li>
+<li>控制台中输入java-version检验系统有没有卸载完成 </li>
+</ol>
+<h2 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h2><ol>
 <li>百度搜索JDK8,找到下载地址 </li>
 <li>同意协议 </li>
 <li>下载电脑对应的版本 </li>
@@ -250,9 +252,28 @@
 </ul>
 </li>
 <li><p>测试 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">scannertest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner s = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入字符"</span>);</span><br><span class="line">        String str = s.next();</span><br><span class="line">        System.out.println(<span class="string">"输入了:"</span> + str);</span><br><span class="line">        System.out.println(<span class="string">"请输入字符"</span>);</span><br><span class="line">        str = s.nextLine();</span><br><span class="line">        System.out.println(<span class="string">"输入了:"</span> + str);</span><br><span class="line">        s.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">scannertest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner s = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入字符"</span>);</span><br><span class="line">        String str = s.next();</span><br><span class="line">        System.out.println(<span class="string">"输入了:"</span> + str);</span><br><span class="line">        System.out.println(<span class="string">"请输入字符"</span>);</span><br><span class="line">        str = s.nextLine();</span><br><span class="line">        System.out.println(<span class="string">"输入了:"</span> + str);</span><br><span class="line">        s.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>控制台打印内容</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">请输入字符</span><br><span class="line"><span class="number">1</span> <span class="number">2222</span><span class="comment">//键盘输入的内容</span></span><br><span class="line">输入了:<span class="number">1</span></span><br><span class="line">请输入字符</span><br><span class="line">输入了: <span class="number">2222</span></span><br><span class="line"></span><br><span class="line">Process finished with exit code <span class="number">0</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">请输入字符</span><br><span class="line"><span class="number">1</span> <span class="number">2222</span><span class="comment">//键盘输入的内容</span></span><br><span class="line">输入了:<span class="number">1</span></span><br><span class="line">请输入字符</span><br><span class="line">输入了: <span class="number">2222</span></span><br><span class="line">Process finished with exit code <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h1><h2 id="用Arrays类可以对数组进行一些基本的操作"><a href="#用Arrays类可以对数组进行一些基本的操作" class="headerlink" title="用Arrays类可以对数组进行一些基本的操作"></a>用Arrays类可以对数组进行一些基本的操作</h2><ul>
+<li><p>数组的工具类java.util.Arrays  </p>
+</li>
+<li><p>由于数组对象本身对象本身并没有什么方法可以供我们调用，但API中提供了一个工具类Arrary供我们使用，从而可以对数组对象进行一些基本的操作 </p>
+</li>
+<li><p>Arrary类中的方法都是static修饰的静态方法，在使用的时候可以直接使用类名进行调用，而不用”使用对象来调用(注意:是不用而不是不能)” </p>
+</li>
+<li><p>具有以下常用功能: </p>
+<ul>
+<li>给数组赋值: 通过 fill 方法 </li>
+<li>对数组排序: 通过 sort 方法,按升序 </li>
+<li>比较数组: 通过 equals 方法比较数组中元素值是否相等 </li>
+<li>查找数组元素: 通过 binarySearch 方法能对排序好的数组进行二分查找法操作 </li>
+</ul>
+</li>
 </ul>
 
       
@@ -457,7 +478,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Arrays类"><span class="toc-number">5.</span> <span class="toc-text">Arrays类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Arrays类可以对数组进行一些基本的操作"><span class="toc-number">5.1.</span> <span class="toc-text">用Arrays类可以对数组进行一些基本的操作</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
