@@ -16,7 +16,7 @@
 <meta property="og:description" content="爱情来的快去的也快，只有Java才是永恒的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-22T02:23:17.000Z">
-<meta property="article:modified_time" content="2020-06-24T11:27:05.174Z">
+<meta property="article:modified_time" content="2020-06-25T03:15:06.692Z">
 <meta property="article:author" content="Jinhu Bi">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -67,7 +67,7 @@
 			</ul>
 		</nav>
 		<nav>
-		    总文章数 5
+		    总文章数 6
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -259,7 +259,7 @@
 
 </li>
 </ul>
-<h1 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h1><h2 id="用Arrays类可以对数组进行一些基本的操作"><a href="#用Arrays类可以对数组进行一些基本的操作" class="headerlink" title="用Arrays类可以对数组进行一些基本的操作"></a>用Arrays类可以对数组进行一些基本的操作</h2><ul>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="用Arrays类可以对数组进行一些基本的操作"><a href="#用Arrays类可以对数组进行一些基本的操作" class="headerlink" title="用Arrays类可以对数组进行一些基本的操作"></a>用Arrays类可以对数组进行一些基本的操作</h2><ul>
 <li><p>数组的工具类java.util.Arrays  </p>
 </li>
 <li><p>由于数组对象本身对象本身并没有什么方法可以供我们调用，但API中提供了一个工具类Arrary供我们使用，从而可以对数组对象进行一些基本的操作 </p>
@@ -272,6 +272,29 @@
 <li>对数组排序: 通过 sort 方法,按升序 </li>
 <li>比较数组: 通过 equals 方法比较数组中元素值是否相等 </li>
 <li>查找数组元素: 通过 binarySearch 方法能对排序好的数组进行二分查找法操作 </li>
+</ul>
+</li>
+</ul>
+<h2 id="稀疏数组"><a href="#稀疏数组" class="headerlink" title="稀疏数组"></a>稀疏数组</h2><ul>
+<li>当一个数组中大部分元素为0，或者为同一值的数组时，可以使用稀疏数组来保存该数组。  </li>
+<li>稀疏数组的处理方式是: <ul>
+<li>记录数组一共有几行几列，有多少个不同的值 </li>
+<li>把具有不同值的元素和行列及值记录在一个小规模的数组中，从而缩小程序的规模 </li>
+</ul>
+</li>
+</ul>
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="创建与初始化对象"><a href="#创建与初始化对象" class="headerlink" title="创建与初始化对象"></a>创建与初始化对象</h2><ul>
+<li>使用new关键字创建对象 </li>
+<li>使用new关键字创建的时候，除了分配内存空间之外，还会给创建好的对象进行默认的初始化以及对类中构造器的调用 </li>
+<li>类中的构造器也称为构造方法，是在进行创建对象的时候必须要调用的。并且构造器有以下两个特点:<ul>
+<li><ol>
+<li>必须和类的名字相同 </li>
+</ol>
+</li>
+<li><ol start="2">
+<li>必须没有返回类型，也不能写void </li>
+</ol>
+</li>
 </ul>
 </li>
 </ul>
@@ -449,6 +472,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/06/25/JavaWeb/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaWeb
+        
+      </div>
+    </a>
+  
   
     <a href="/2020/06/21/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">快捷键</div>
@@ -478,7 +510,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Arrays类"><span class="toc-number">5.</span> <span class="toc-text">Arrays类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Arrays类可以对数组进行一些基本的操作"><span class="toc-number">5.1.</span> <span class="toc-text">用Arrays类可以对数组进行一些基本的操作</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数组"><span class="toc-number">5.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Arrays类可以对数组进行一些基本的操作"><span class="toc-number">5.1.</span> <span class="toc-text">用Arrays类可以对数组进行一些基本的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#稀疏数组"><span class="toc-number">5.2.</span> <span class="toc-text">稀疏数组</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#面向对象"><span class="toc-number">6.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建与初始化对象"><span class="toc-number">6.1.</span> <span class="toc-text">创建与初始化对象</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -755,5 +787,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-z16"},"display":{"position":"left","width":100,"height":200,"hOffset":-10,"vOffset":40},"mobile":{"show":false}});</script></body>
 </html>
