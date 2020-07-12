@@ -16,7 +16,7 @@
 <meta property="og:description" content="爱情来的快去的也快，只有Java才是永恒的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-22T02:23:17.000Z">
-<meta property="article:modified_time" content="2020-07-12T03:38:49.309Z">
+<meta property="article:modified_time" content="2020-07-12T07:29:48.176Z">
 <meta property="article:author" content="Jinhu Bi">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -337,8 +337,36 @@
 <p> public int size():获取集合的尺寸长度，返回值是集合中包含的元素个数。</p>
 </li>
 <li><p>如果希望向集合ArraryList当中春初基本类型数据，必须使用基本类型所对应的“包装类”。<br>基本类型  包装类(引用类型，包装类都位于java.lang包下)<br>byte      Byte<br>short     Short<br>int       Integer    【特殊】<br>long      Long<br>float     Float<br>double    Double<br>char      Character    【特殊】<br>boolean   Boolean</p>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1></li>
+<li><p>java.lang.String类代表字符串<br>API中说：Java 程序当中的所有字符串字面值（如“abc” ）都作为此类的实现实例。<br>其实就是说，程序当中的所有双引号字符串，都是String类的对象。（即使没有new也照样是）。</p>
+</li>
+<li><p>字符串的特点：</p>
 </li>
 </ul>
+<ol>
+<li>字符串的内容用不可变  【重点】</li>
+<li>正是因为字符串不可改变，所以字符串可以共享使用。</li>
+<li>字符串效果上相当于是char[]字符数组，但是底层原理是byte[]字节数组。</li>
+</ol>
+<ul>
+<li>创建字符串的常见3+1种方式</li>
+<li>三种构造方法:</li>
+</ul>
+<ol>
+<li>public String():创建一个空白字符串，不含有任何内容。</li>
+<li>public String(char[] arrary): 根据字符数组的内容，来创建对应的字符串。</li>
+<li>public String(byte[] arrary): 根据字节数组的内容，来创建对应的字符串。</li>
+</ol>
+<ul>
+<li><p>一种直接创建：<br>String str = “hello!”;//右边直接用双引号</p>
+</li>
+<li><p>注意：直接写上双引号就是字符串对象</p>
+</li>
+</ul>
+<ol>
+<li>对于引用类型来说，==进行的是地址的比较。</li>
+<li>双引号直接写的字符串在常量池中，new的不在池中。</li>
+</ol>
 
       
 	
@@ -551,7 +579,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">5.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法的定义"><span class="toc-number">5.1.</span> <span class="toc-text">方法的定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数组"><span class="toc-number">6.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Arrays类可以对数组进行一些基本的操作"><span class="toc-number">6.1.</span> <span class="toc-text">用Arrays类可以对数组进行一些基本的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#稀疏数组"><span class="toc-number">6.2.</span> <span class="toc-text">稀疏数组</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#面向对象"><span class="toc-number">7.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建与初始化对象"><span class="toc-number">7.1.</span> <span class="toc-text">创建与初始化对象</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二分查找法"><span class="toc-number">8.</span> <span class="toc-text">二分查找法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#集合"><span class="toc-number">9.</span> <span class="toc-text">集合</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#爱情来的快去的也快，只有Java才是永恒的"><span class="toc-number">1.</span> <span class="toc-text">爱情来的快去的也快，只有Java才是永恒的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装开发环境"><span class="toc-number">2.</span> <span class="toc-text">安装开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#卸载SDK"><span class="toc-number">2.1.</span> <span class="toc-text">卸载SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装SDK"><span class="toc-number">2.2.</span> <span class="toc-text">安装SDK</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVADoc"><span class="toc-number">3.</span> <span class="toc-text">JAVADoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用来生成自己API文档的命令–javadoc"><span class="toc-number">3.1.</span> <span class="toc-text">用来生成自己API文档的命令–javadoc</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Scanner对象"><span class="toc-number">4.</span> <span class="toc-text">Scanner对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Scanner类可以获取用户输入"><span class="toc-number">4.1.</span> <span class="toc-text">用Scanner类可以获取用户输入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">5.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法的定义"><span class="toc-number">5.1.</span> <span class="toc-text">方法的定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数组"><span class="toc-number">6.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用Arrays类可以对数组进行一些基本的操作"><span class="toc-number">6.1.</span> <span class="toc-text">用Arrays类可以对数组进行一些基本的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#稀疏数组"><span class="toc-number">6.2.</span> <span class="toc-text">稀疏数组</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#面向对象"><span class="toc-number">7.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建与初始化对象"><span class="toc-number">7.1.</span> <span class="toc-text">创建与初始化对象</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二分查找法"><span class="toc-number">8.</span> <span class="toc-text">二分查找法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#集合"><span class="toc-number">9.</span> <span class="toc-text">集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符串"><span class="toc-number">10.</span> <span class="toc-text">字符串</span></a></li></ol>
                     </div>
                 </span>
             </div>
